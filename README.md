@@ -12,4 +12,5 @@ test ground for youtube-api
 - [Search forDeveloper] https://developers.google.com/youtube/v3/guides/implementation/search#videos-uploaded-via-the-developers-app-or-website
 
 #### others
-- creating embeded video, embeded playlist is supported (Youtube Help)
+creating embeded video, embeded playlist is supported (Youtube Help)
+- [IFrame] https://developers.google.com/youtube/player_parameters
