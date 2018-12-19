@@ -6,16 +6,22 @@
 </head>
 
 <body>
-    <button id="execute-request-button">Google Sign In</button>
+    <!-- search-api , using OAuth sign in -->
+    <!-- <button id="execute-request-button">Google Sign In</button> -->
     <div id='search-results'></div>
 
     <script src="secret.js"></script>
 
-    <script src="search-api.js"></script>
+    <script src="google-client-api.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-        </script>
+
+    <!-- Load the library synchronously, slightly longer DOM loading time -->
+    <!-- Loading the google api earlier probably able to load the youtube videos faster -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>handleClientLoad()</script>
+
+    <!-- <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"></script> -->
 </body>
 
 </html>
