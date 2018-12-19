@@ -3,7 +3,7 @@
 **/
 
 const oauthSettings = {
-    redirectURI: 'http://localhost:5500/oauth2test.html',
+    redirectURI: 'http://localhost:5500/oauth2/test.html',
     // scope: 'https://www.googleapis.com/auth/youtube.force-ssl',
     scope: 'https://www.googleapis.com/auth/youtube.readonly',
 };
