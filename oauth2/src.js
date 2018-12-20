@@ -86,7 +86,7 @@ const getInfoFromServerResponse = queryString => {
     let regex = /([^&=]+)=([^&]*)/g, m;
     const params = {};
     while (m = regex.exec(queryString)) {
-        console.log(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
+        // console.log(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
         params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
     }
     return params;
